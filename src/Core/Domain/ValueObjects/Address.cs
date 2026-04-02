@@ -3,7 +3,7 @@
 /// <summary>Адрес постройки, например пукта выдачи</summary>
 public sealed record Address
 {
-    public Address(string country, string region, string city, string street, string houseNumber)
+    private Address(string country, string region, string city, string street, string houseNumber)
     {
         if (country == null) throw new ArgumentNullException(nameof(country));
 

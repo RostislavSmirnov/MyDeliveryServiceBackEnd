@@ -5,7 +5,17 @@ VisualStudioVersion = 18.4.11620.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Core\Domain\Domain.csproj", "{08B33507-B4FB-42FA-99F6-443A6B67CC6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Core\Application\Application.csproj", "{D895DCFB-0BB1-4178-B466-AB17FF36C918}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Domain", "src\AuthService\AuthService.Domain\AuthService.Domain.csproj", "{B2FCF689-B4B2-4DF2-95CF-EB1193C1D377}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthService", "AuthService", "{232394BD-12BE-4E4D-A4DD-93B169C2B43C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{B8F6F30E-22A0-49FD-B202-8ADC65A92824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSQL.Persistence", "src\Infrastructure\Persistence\PostgreSQL.Persistence\PostgreSQL.Persistence.csproj", "{436CF03E-ADC1-428D-A7D2-B752B3866396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.Persistence", "src\Infrastructure\Persistence\SQLite.Persistence\SQLite.Persistence.csproj", "{9EE29BF8-0C2A-4CAF-AE63-DEB21B2D2664}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{9DF8B9C9-EE8F-4A15-AEC0-AAAEB7F384CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,13 +27,27 @@ Global
 		{08B33507-B4FB-42FA-99F6-443A6B67CC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08B33507-B4FB-42FA-99F6-443A6B67CC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08B33507-B4FB-42FA-99F6-443A6B67CC6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D895DCFB-0BB1-4178-B466-AB17FF36C918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D895DCFB-0BB1-4178-B466-AB17FF36C918}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D895DCFB-0BB1-4178-B466-AB17FF36C918}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D895DCFB-0BB1-4178-B466-AB17FF36C918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FCF689-B4B2-4DF2-95CF-EB1193C1D377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FCF689-B4B2-4DF2-95CF-EB1193C1D377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FCF689-B4B2-4DF2-95CF-EB1193C1D377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FCF689-B4B2-4DF2-95CF-EB1193C1D377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436CF03E-ADC1-428D-A7D2-B752B3866396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436CF03E-ADC1-428D-A7D2-B752B3866396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436CF03E-ADC1-428D-A7D2-B752B3866396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436CF03E-ADC1-428D-A7D2-B752B3866396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE29BF8-0C2A-4CAF-AE63-DEB21B2D2664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE29BF8-0C2A-4CAF-AE63-DEB21B2D2664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE29BF8-0C2A-4CAF-AE63-DEB21B2D2664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE29BF8-0C2A-4CAF-AE63-DEB21B2D2664}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08B33507-B4FB-42FA-99F6-443A6B67CC6D} = {B8F6F30E-22A0-49FD-B202-8ADC65A92824}
+		{B2FCF689-B4B2-4DF2-95CF-EB1193C1D377} = {232394BD-12BE-4E4D-A4DD-93B169C2B43C}
+		{436CF03E-ADC1-428D-A7D2-B752B3866396} = {9DF8B9C9-EE8F-4A15-AEC0-AAAEB7F384CB}
+		{9EE29BF8-0C2A-4CAF-AE63-DEB21B2D2664} = {9DF8B9C9-EE8F-4A15-AEC0-AAAEB7F384CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {684BE265-CD7A-40CF-A551-075246109A0F}

@@ -15,7 +15,7 @@ public sealed class StaffAccount : BaseAccount
     }
 
     /// <summary>Роль сотрудника</summary>
-    public StaffRole Role { get; set; } = null!;
+    public StaffRole Role { get; private set; } = null!;
 
     public static StaffAccount Create(string idemPotencyKey, Guid userId, string login, string password, string role)
     {

@@ -13,8 +13,7 @@ public sealed record ClientRole
 
     public static ClientRole Create(string? roleName)
     {
-        if (string.IsNullOrWhiteSpace(roleName))
-            throw new ArgumentException("Роль не может быть пустой", nameof(roleName));
+        if (string.IsNullOrWhiteSpace(roleName)) throw new ArgumentNullException("Роль не может быть пустой", nameof(roleName));
 
         string normalized = roleName.Trim().ToLowerInvariant();
 

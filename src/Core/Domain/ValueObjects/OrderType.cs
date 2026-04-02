@@ -12,8 +12,7 @@
 
         public static OrderType Create(string orderType)
         {
-            if (string.IsNullOrWhiteSpace(orderType))
-                throw new ArgumentException("Тип не может быть пустым", nameof(orderType));
+            if (string.IsNullOrWhiteSpace(orderType)) throw new ArgumentException("Тип не может быть пустым", nameof(orderType));
 
             string normalized = orderType.Trim().ToLowerInvariant();
 

@@ -13,8 +13,7 @@ public sealed record StaffRole
 
     public static StaffRole Create(string? roleName)
     {
-        if (string.IsNullOrWhiteSpace(roleName))
-            throw new ArgumentException("Роль не может быть пустой", nameof(roleName));
+        if (string.IsNullOrWhiteSpace(roleName)) throw new ArgumentException("Роль не может быть пустой", nameof(roleName));
 
         var normalized = roleName.Trim().ToLowerInvariant();
 
